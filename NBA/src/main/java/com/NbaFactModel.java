@@ -6,12 +6,23 @@ package com;
 
 public class NbaFactModel implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public NbaFactModel() {
-    }
+	private java.lang.String flightNo;
 
+	public NbaFactModel() {
+	}
 
+	public java.lang.String getFlightNo() {
+		return this.flightNo;
+	}
 
+	public void setFlightNo(java.lang.String flightNo) {
+		this.flightNo = flightNo;
+	}
+
+	public NbaFactModel(java.lang.String flightNo) {
+		this.flightNo = flightNo;
+	}
 
 }
