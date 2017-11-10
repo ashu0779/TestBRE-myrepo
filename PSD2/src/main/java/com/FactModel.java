@@ -6,12 +6,23 @@ package com;
 
 public class FactModel implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public FactModel() {
-    }
+	private java.lang.String flightno;
 
+	public FactModel() {
+	}
 
+	public java.lang.String getFlightno() {
+		return this.flightno;
+	}
 
+	public void setFlightno(java.lang.String flightno) {
+		this.flightno = flightno;
+	}
+
+	public FactModel(java.lang.String flightno) {
+		this.flightno = flightno;
+	}
 
 }
